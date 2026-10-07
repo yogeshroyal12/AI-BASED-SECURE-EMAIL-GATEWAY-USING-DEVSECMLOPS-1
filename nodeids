@@ -1,0 +1,12 @@
+[
+  "03_TEST_VERIFY/tests/test_api.py::test_admin_stats_protected",
+  "03_TEST_VERIFY/tests/test_api.py::test_empty_body_rejected",
+  "03_TEST_VERIFY/tests/test_api.py::test_health",
+  "03_TEST_VERIFY/tests/test_api.py::test_oversized_body_rejected",
+  "03_TEST_VERIFY/tests/test_api.py::test_phishing_gets_high_risk_action",
+  "03_TEST_VERIFY/tests/test_api.py::test_requires_api_key",
+  "03_TEST_VERIFY/tests/test_api.py::test_valid_email",
+  "03_TEST_VERIFY/tests/test_security.py::test_credential_indicator",
+  "03_TEST_VERIFY/tests/test_security.py::test_suspicious_link_indicator",
+  "03_TEST_VERIFY/tests/test_security.py::test_urgency_indicator"
+]

@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+.env
+*.log
+logs/*.log
+
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/*.local.json
+
+# Temporary reports
+zap-report.html
+zap_report.html
+
+# Local model caches
+*.tmp

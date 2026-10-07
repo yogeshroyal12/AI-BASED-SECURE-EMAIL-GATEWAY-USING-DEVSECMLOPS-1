@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI — Secure Email Gateway",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "app.main:app",
+        "--reload",
+        "--port",
+        "8000"
+      ],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}\\02_DEVELOP_BUILD"
+      },
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}\\.env",
+      "envFile": "${workspaceFolder}\\.env",
+      "envFile": "${workspaceFolder}\\.env"
+    },
+    {
+      "name": "Train ML Model",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}\\02_DEVELOP_BUILD\\ml\\train.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Streamlit Dashboard",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "${workspaceFolder}\\02_DEVELOP_BUILD\\dashboard\\streamlit_app.py"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

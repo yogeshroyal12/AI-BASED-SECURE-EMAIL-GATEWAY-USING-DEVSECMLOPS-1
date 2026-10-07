@@ -1,0 +1,8 @@
+{
+  "status": "NO_DRIFT",
+  "psi_email_length": 0.0161,
+  "threshold": 0.2,
+  "baseline_rows": 300,
+  "current_rows": 300,
+  "note": "Illustrative batch drift check for the practical project."
+}

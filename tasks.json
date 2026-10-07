@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Train Model",
+      "type": "shell",
+      "command": "$env:PYTHONPATH='.\\02_DEVELOP_BUILD'; python '.\\02_DEVELOP_BUILD\\ml\\train.py'",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "pytest -q .\\03_TEST_VERIFY\\tests",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run API",
+      "type": "shell",
+      "command": "$env:PYTHONPATH='.\\02_DEVELOP_BUILD'; uvicorn app.main:app --reload --port 8000",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Dashboard",
+      "type": "shell",
+      "command": "streamlit run '.\\02_DEVELOP_BUILD\\dashboard\\streamlit_app.py'",
+      "options": {
+        "shell": {
+          "executable": "powershell.exe",
+          "args": ["-NoProfile", "-Command"]
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
